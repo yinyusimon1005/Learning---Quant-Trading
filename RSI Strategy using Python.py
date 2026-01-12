@@ -1,3 +1,5 @@
+# %% ##############################################
+
 # RSI Strategy using python
 
 ## RSI > 70 => Overbought, sold sell signal ; RSI < 30 => Oversold, buy signal
@@ -23,6 +25,21 @@ import pandas as pd
 import yfinance as yf
 import matplotlib.pyplot as plt
 
+# %% ##############################################
+
+from PIL import Image
+import matplotlib.pyplot as plt
+
+img = Image.open("images/RSI_Strategy_使用技巧.jpg")
+
+plt.figure(figsize=(8, 4), dpi=150)   # 控制显示大小
+plt.imshow(img)
+plt.axis("off")                       # 关闭坐标轴
+plt.show()
+
+
+
+# %% ##############################################
 
 # =========================
 # 1) RSI calculation helper
@@ -212,3 +229,5 @@ if __name__ == "__main__":
         show_midline=True,
     )
 
+
+# %%
